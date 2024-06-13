@@ -10,12 +10,12 @@ This repository is a step by step integration for **Microsoft Authentication Lib
 Before using **Microsoft Authentication Library (MSAL)**, register your application in Azure Active Directory (AD) to get the application's clientId.
 
 ## 📃 Procedures
-[ ] Create New Application in Angular
-[ ] Install Other Packages and Required Libraries to Perform the MSAL
-[ ] Create Login Page and Homepage
-[ ] MSAL Configuration
-[ ] Secure Routes with AuthGuard
-[ ] Adding Authorization Bearer in the HTTP Headers.
+- [ ] Create New Application in Angular
+- [ ] Install Other Packages and Required Libraries to Perform the MSAL
+- [ ] Create Login Page and Homepage
+- [ ] MSAL Configuration
+- [ ] Secure Routes with AuthGuard
+- [ ] Adding Authorization Bearer in the HTTP Headers.
 
 ### 1. Create New Application in Angular
 Create a new web application using Angular CLI. Please note that this application uses **Angular 14**:
