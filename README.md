@@ -3,8 +3,7 @@
 ## 👋 Introduction
 This repository is a step by step integration for **Microsoft Authentication Library (MSAL)** in Angular. Feel free to download this repository and test the final output of the application for you to easily understand how MSAL works. 
 
-> ✏️ Note
-Make sure to update the **tenantId** and **clientID** in the app.module.ts or it will return an error.
+> ✏️ Note ✏️   Make sure to update the **tenantId** and **clientID** in the app.module.ts or it will return an error.
 
 ## Pre-requisites
 Before using **Microsoft Authentication Library (MSAL)**, register your application in Azure Active Directory (AD) to get the application's clientId.
@@ -305,11 +304,9 @@ const routes: Routes = [
 
 To check if token is stored in localStorage, press **"F12"** and go to **"Application"**. After that, look for the **Local storage** in **Storage** category and click the http://localhost:4200 (app's current default URI)
 
-> ❓ How to test if it works properly
-You can clear the localStorage values or check [here](https://github.com/labisda/MSAL-SSO-POC/tree/master/src/app/pages/homepage) on how to implement a logout button in your homepage.
+> ❓ How to test if it works properly ❓   You can clear the localStorage values or check [here](https://github.com/labisda/MSAL-SSO-POC/tree/master/src/app/pages/homepage) on how to implement a logout button in your homepage.
 
-> ✏️ Note
-We can also use MsalGuard but for this example we will integrate it in our custom Auth Guard to make it easier for an application to have 1 or more validations for the securing the routes.
+> ✏️ Note ✏️   We can also use MsalGuard but for this example we will integrate it in our custom Auth Guard to make it easier for an application to have 1 or more validations for the securing the routes.
 
 
 ### 6. Adding Authorization Bearer in the HTTP Headers
