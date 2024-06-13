@@ -10,12 +10,12 @@ Make sure to update the **tenantId** and **clientID** in the app.module.ts or it
 Before using **Microsoft Authentication Library (MSAL)**, register your application in Azure Active Directory (AD) to get the application's clientId.
 
 ## 📃 Procedures
-[ ] Create new application in Angular
-[ ] Install other packages and required libraries to perform the MSAL
-[ ] Create login page and homepage
+[ ] Create New Application in Angular
+[ ] Install Other Packages and Required Libraries to Perform the MSAL
+[ ] Create Login Page and Homepage
 [ ] MSAL Configuration
-[ ] Secure routes with AuthGuard
-[ ] Adding token bearer in the headers.
+[ ] Secure Routes with AuthGuard
+[ ] Adding Authorization Bearer in the HTTP Headers.
 
 ### 1. Create New Application in Angular
 Create a new web application using Angular CLI. Please note that this application uses **Angular 14**:
@@ -312,7 +312,7 @@ You can clear the localStorage values or check [here](https://github.com/labisda
 We can also use MsalGuard but for this example we will integrate it in our custom Auth Guard to make it easier for an application to have 1 or more validations for the securing the routes.
 
 
-### 6. Adding Token Bearer in the HTTP Headers
+### 6. Adding Authorization Bearer in the HTTP Headers
 It is important to add the token generated in the HTTP headers to authenticate the API calls in your frontend application. To do that simply add HTTP header along with the token. See example below:
 
 ```
