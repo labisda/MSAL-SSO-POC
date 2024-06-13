@@ -23,6 +23,9 @@ Create a new web application using Angular CLI. Please note that this applicatio
 ng new MSAL-SSO-POC
 ```
 
+<br />
+
+
 ### 2. Install required and optional libraries to perform the MSAL
 
 ##### **Required Libraries:**
@@ -47,6 +50,7 @@ ng add @angular/material
 
 You can also install Tailwind for efficient component styling. Visit [https://tailwindcss.com/docs/guides/angular](https://tailwindcss.com/docs/guides/angular) to learn how to install Tailwind in your Angular Application.
 
+<br />
 
 ### 3. Create Login Page and Homepage
 First, create Login Page Component. 
@@ -64,6 +68,8 @@ Before we configure MSAL in our login page make sure to include these on your lo
  But still, feel free to style/design how you will show errors, queuing, and other information for the user. It will be also easier for the users as well for the support/dev team to understand if an error occurs. You may also check how this application integrate the login component [here](https://github.com/labisda/MSAL-SSO-POC/tree/master/src/app/pages/login).
 
 Once the login.component.ts is created, create a homepage which will be used for securing routes using AuthGuard.
+
+<br />
 
 ### 4. MSAL Configuration
 As for the configuration, go to your **app.modules.ts** and add the configuration below. Make sure to change the clientId as well as the tenantId based on the registered app in the Azure AD.
@@ -248,6 +254,9 @@ export class LoginComponent implements OnInit {
 </div>
 ```
 
+<br />
+
+
 ### 5. Secure routes with AuthGuard
 Create an Auth Guard using Angular CLI:
 ```
@@ -311,6 +320,7 @@ To check if token is stored in localStorage, press **"F12"** and go to **"Applic
 > ✏️ Note
 > We can also use MsalGuard but for this example we will integrate it in our custom Auth Guard to make it easier for an application to have 1 or more validations for the securing the routes.
 
+<br />
 
 ### 6. Adding Authorization Bearer in the HTTP Headers
 It is important to add the token generated in the HTTP headers to authenticate the API calls in your frontend application. To do that simply add HTTP header along with the token. See example below:
