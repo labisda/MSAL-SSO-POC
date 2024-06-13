@@ -16,8 +16,8 @@ import { MatButtonModule } from '@angular/material/button';
 export function MSALInstanceFactory(): IPublicClientApplication {
   return new PublicClientApplication({
     auth: {
-      clientId: 'd5383760-30f8-4599-8ea4-29bf1e2ec004',
-      authority: 'https://login.microsoftonline.com/5d3e2773-e07f-4432-a630-1a0f68a28a05',  // this is required for multi-tenants, may also be commented if not multi-tenant
+      clientId: 'clientId', // update clientId
+      authority: 'https://login.microsoftonline.com/tenantId',  // this is required for multi-tenants, may also be commented if not multi-tenant
       redirectUri: 'http://localhost:4200' // depends on available URLs you set while registering the app. Must be changed based on the environment.
     },
     cache: {
