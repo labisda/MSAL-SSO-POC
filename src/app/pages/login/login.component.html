@@ -2,10 +2,7 @@
     <div
         class="flex flex-col items-center justify-center gap-3 bg-white shadow-lg rounded-md w-full max-w-[700px] h-auto py-10">
 
-        <ng-container *ngIf="!showLoginBtn">
-            <mat-spinner></mat-spinner>
-        </ng-container>
-        <ng-container *ngIf="showLoginBtn">
+        <ng-container *ngIf="showLoginBtn; else loadingSpinner">
             <svg class="w-[100px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
                 <path
                     d="M30 51.988A21.988 21.988 0 1 1 51.988 30 22.014 22.014 0 0 1 30 51.988zM30 3a27 27 0 1 0 27 27A27.03 27.03 0 0 0 30 3z"
@@ -15,6 +12,10 @@
                     style="fill: #EC6453;" />
             </svg>
         </ng-container>
+        
+        <ng-template #loadingSpinner>
+            <mat-spinner></mat-spinner>
+        </ng-template>
 
         <p class="!mt-5 !mb-0 text-md font-medium text-2xl uppercase">{{ loadingTitle }}</p>
         <p class="!m-0 text-md font-normal text-lg">{{ loadingMsg }}</p>

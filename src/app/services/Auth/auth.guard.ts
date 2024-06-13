@@ -16,14 +16,18 @@ export class AuthGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
+      
       const account: any = this.msalService.instance.getActiveAccount();
+      // checks if active account is available.
       if (account) {
-        const currentTimestamp = Math.floor(new Date().getTime() / 1000);
+        const currentTimestamp = Math.floor(new Date().getTime() / 1000); // gets the current unix timestamp in seconds.
+        // checks if account is valid and not expired
         if (account.idTokenClaims && account.idTokenClaims.exp > currentTimestamp) {
           return true;
         }
       }
 
+      // redirects to login to get authenticated.
       this.router.navigate(['/login']);
       return false;
 

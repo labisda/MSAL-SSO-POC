@@ -12,6 +12,7 @@ export class HomepageComponent implements OnInit {
   constructor(private msalService: MsalService, private http: HttpClient) { }
 
   ngOnInit(): void {
+
   }
 
   getName(): string {
@@ -19,6 +20,8 @@ export class HomepageComponent implements OnInit {
   }
 
   logout() {
+    // remove token from local storage
+    localStorage.removeItem("token");
     this.msalService.logout();
   }
 
