@@ -3,7 +3,8 @@
 ## 👋 Introduction
 This repository is a step by step integration for **Microsoft Authentication Library (MSAL)** in Angular. Feel free to download this repository and test the final output of the application for you to easily understand how MSAL works. 
 
-> ✏️ Note ✏️   Make sure to update the **tenantId** and **clientID** in the app.module.ts or it will return an error.
+> ✏️ Note
+> Make sure to update the **tenantId** and **clientID** in the app.module.ts or it will return an error.
 
 ## Pre-requisites
 Before using **Microsoft Authentication Library (MSAL)**, register your application in Azure Active Directory (AD) to get the application's clientId.
